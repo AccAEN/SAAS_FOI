@@ -5,8 +5,7 @@ Analysis of data from the South Australian Ambulance Service
 [Introduction](#introduction)<br>
 [Comparing ambulance calls in October 2021 with October 2019](#comparing-ambulance-calls-in-october-2021-with-october-2019)<br>
 [How this dataset was analysed](#how-this-dataset-was-analysed)<br>
-
-[The graphs](#The-graphs)
+[The graphs](#the-graphs)<br>
 
 See also: [Accessible Adverse Event Notification (making the Database of Adverse Event Notifications accessible)](https://github.com/AccAEN/AccessibleAdverseEventNotification/blob/main/README.md)
 

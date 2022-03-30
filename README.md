@@ -45,7 +45,7 @@ There are some differences that are unexpected. A significant decrease in 'Uncon
 
 ![OR 12-17sc](graphs/SAAS_calls_12_to_17_years_scaling.png)
 
-The 12 to 21 age grouping is included because it has enough stroke calls in 2019 to be able to make a comparison. The Stroke / TIA numbers are not statistically significant, but it could be indicative of a problem. 
+The 12 to 21 age grouping is included because it has enough stroke calls in 2019 to be able to make a comparison. The Stroke / TIA numbers are not statistically significant, but it could be indicative of a problem. Number of stroke calls for that age group went from 6 in Oct 2019 to 14 in Oct 2021.
 
 ![OR 12-21](graphs/SAAS_calls_12_to_21_years.png)
 

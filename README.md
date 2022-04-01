@@ -5,6 +5,7 @@ Analysis of data from the South Australian Ambulance Service
 [Introduction](#introduction)<br>
 [Comparing ambulance calls in October 2021 with October 2019](#comparing-ambulance-calls-in-october-2021-with-october-2019)<br>
 [How this dataset was analysed](#how-this-dataset-was-analysed)<br>
+[How to read the graphs](#how-to-read-the-graphs)<br>
 [The graphs](#the-graphs)<br>
 
 See also: [Accessible Adverse Event Notification (making the Database of Adverse Event Notifications accessible)](https://github.com/AccAEN/AccessibleAdverseEventNotification/blob/main/README.md)
@@ -39,13 +40,17 @@ Please be aware that the normal seasonal influenza did not occur over the last t
 
 There are some differences that are unexpected. A significant decrease in 'Unconscious / Fainting (Near)' in some age groups and a significant increase in 'Traumatic Injuries (Specific)' in some age groups. A possible explanation for the significantly lower numbers of 'Unconscious / Fainting (Near)' events could be due to the [unusually hot October in 2019]( https://web.archive.org/web/20191207165754/http://www.bom.gov.au/climate/dwo/201910/html/IDCJDW5081.201910.shtml) and the [relatively mild October in 2021]( https://web.archive.org/web/20220330022258/http://www.bom.gov.au/climate/dwo/202110/html/IDCJDW5081.202110.shtml).
 
+### How to read the graphs
+
+If an odds ratio is above one then there was an increased chance of that event occurring, and below one means a decreased chance. For example, if the odds ratio of 'Convulsions / Fitting' in 12 to 17 year old children was 2.2 then the chance of a call being made for a 12 to 17 year old for 'Convulsions / Fitting' in October 2021 was 2.2 times the rate of October 2019 (increased by 120%). For this specific category there were 31 calls in October 2019 and 70 calls in October 2021. The ABS estimate for the population in this age group was 120,738 and 124,272 in October 2019 and 2021 respectively. The error bars show the 95% confidence interval and red indicates statistical significance (p < 0.05). Very wide error bars usually indicate a very small number of events occurred (for example, in October 2019 there were four ambulance calls for 'Stroke / TIA', but eight in October 2021 for 12 to 17 year old children). These graphs don't indicate the cause of the differences in ambulance calls in the two compared months.
+
 ### The graphs
 
 ![OR 12-17](graphs/SAAS_calls_12_to_17_years.png)
 
 ![OR 12-17sc](graphs/SAAS_calls_12_to_17_years_scaling.png)
 
-The 12 to 21 age grouping is included because it has enough stroke calls in 2019 to be able to make a comparison. The Stroke / TIA numbers are not statistically significant, but it could be indicative of a problem. Number of stroke calls for that age group went from 6 in Oct 2019 to 14 in Oct 2021.
+The 12 to 21 age grouping is included because it has enough stroke calls in 2019 and 2021 to start getting close to significance (p = 0.08). The Stroke / TIA numbers are not statistically significant, but it could be indicative of a problem. Number of stroke calls for that age group went from six in Oct 2019 to 14 in Oct 2021.
 
 ![OR 12-21](graphs/SAAS_calls_12_to_21_years.png)
 

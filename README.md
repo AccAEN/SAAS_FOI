@@ -32,7 +32,7 @@ Some calls are repeated a few minutes after the first call. These repeat calls n
 
 Population information for each age group at the two time points was collected from [the ABS](https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/sep-2021/3101054.xlsx) (ABS data is actually 30 June estimate, but the relative number of 30 June 2019 to 30 June 2021 should be a similar ratio for October 2019 to October 2021.
 
-Analysis was performed in R. All ambulance callouts related to other agencies were removed because they didn't appear to add any useful information (e.g. an event labelled TRANSFER, TRANSPORT etc.). Information was extracted for a selected age group. If an event (e.g. a Chest Pain call) occurred three times or less in a month in October 2019 or October 2021 in the selected age group, then it was removed. If the sum of calls for a particular event (add both Oct 2019 and Oct 2021) was less than 10 times then it was removed. This kept the error bars from being so large that useful information could not be observed. Fisher's exact test (fisher.test) was used to perform the analysis, which calculated the odds ratio, the upper and lower limits for the 95% confidence interval and the p-value. Graphs were generated using ggplot2.
+Analysis was performed in R. All ambulance callouts related to other agencies were removed because they didn't appear to add any useful information (e.g. an event labelled TRANSFER, TRANSPORT etc.). Information was extracted for a selected age group. If an event (e.g. a Chest Pain call) occurred three times or less in a month in October 2019 or October 2021 in the selected age group, then it was removed. If the sum of calls for a particular event (add both Oct 2019 and Oct 2021) was less than 10 times then it was removed. This kept the error bars from being so large that useful information could not be observed. Fisher's exact test (fisher.test) was used to perform the analysis, which calculated the odds ratio, the upper and lower limits for the 95% confidence interval and the p-value. The p-value was adjusted for multiple comparison using the Benjamini & Hochberg adjustment. Graphs were generated using ggplot2.
 
 There were a large number of missing entries in the AGE column of the source data. An attempt was made to determine what those missing entries might have been by finding the total number of entries for an event and the number of entries for that event which had age information. A scaling factor was applied to attempt to correct for this, but there are potential problems with this. It might be more likely that someone calling an ambulance for a 16 year old having a stroke would know the age of the patient than someone calling for a much older patient.
 
@@ -46,19 +46,13 @@ If an odds ratio is above one then there was an increased chance of that event o
 
 ### The graphs
 
-![OR 12-17](graphs/SAAS_calls_12_to_17_years.png)
+![OR 12-17](graphs/SAAS_calls_12_to_19_years.png)
 
-![OR 12-17sc](graphs/SAAS_calls_12_to_17_years_scaling.png)
+![OR 12-17sc](graphs/SAAS_calls_12_to_19_years_scaling.png)
 
-The 12 to 21 age grouping is included because it has enough stroke calls in 2019 and 2021 to start getting close to significance (p = 0.08). The Stroke / TIA numbers are not statistically significant, but it could be indicative of a problem. Number of stroke calls for that age group went from six in Oct 2019 to 14 in Oct 2021.
+![OR 18-29](graphs/SAAS_calls_20_to_29_years.png)
 
-![OR 12-21](graphs/SAAS_calls_12_to_21_years.png)
-
-![OR 12-21sc](graphs/SAAS_calls_12_to_21_years_scaling.png)
-
-![OR 18-29](graphs/SAAS_calls_18_to_29_years.png)
-
-![OR 18-29sc](graphs/SAAS_calls_18_to_29_years_scaling.png)
+![OR 18-29sc](graphs/SAAS_calls_20_to_29_years_scaling.png)
 
 ![OR 30-39](graphs/SAAS_calls_30_to_39_years.png)
 

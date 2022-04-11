@@ -1,6 +1,8 @@
 # SAAS_FOI
 Analysis of data from the South Australian Ambulance Service
 
+[Have a look at my article on substack.](https://accaen.substack.com/p/south-australian-ambulance-service)
+
 ### Table of Contents
 [Introduction](#introduction)<br>
 [Comparing ambulance calls in October 2021 with October 2019](#comparing-ambulance-calls-in-october-2021-with-october-2019)<br>
